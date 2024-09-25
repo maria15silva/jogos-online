@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jogos Online</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Inclusão do script UserWay para acessibilidade -->
+    <script>
+        (function(d) {
+            var s = d.createElement("script");
+            s.setAttribute("data-account", "INSIRA_SEU_CÓDIGO_USERWAY_AQUI");
+            s.setAttribute("src", "https://cdn.userway.org/widget.js");
+            (d.body || d.head).appendChild(s);
+        })(document);
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #25b0a0;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+        }
+
+        .game-card {
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 500px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card img {
+            width: 300px;
+            height: 350px;
+            margin-bottom: 20px;
+        }
+
+        .game-card h2 {
+            font-size: 22px;
+            margin: 15px 0;
+        }
+
+        .game-card p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .game-card .price {
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            background-color: #25b0a0;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .buy-button:hover {
+            background-color: #39d2c0;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #25b0a0;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jogos Online</h1>
+    </header>
+
+    <div class="container">
+        <div class="game-card">
+            <img src="https://m.media-amazon.com/images/I/81XXYw0k9aL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Jogo 1">
+            <h2>Mario vs. Donkey Kong</h2>
+            <p>É um jogo de plataforma e puzzle onde Mario enfrenta Donkey Kong para resgatar Mini Marios, brinquedos sequestrados. </p>
+            <p class="price">R$ 239,99</p>
+            <a class="buy-button" href="https://www.amazon.com.br/dp/B0CSDZ5811">Comprar</a>
+        </div>
+
+        <div class="game-card">
+            <img src="https://m.media-amazon.com/images/I/71otyq1xFNL._AC_SY741_.jpg" alt="Jogo 2">
+            <h2>The Sims 4</h2>
+            <p>É um jogo de simulação de vida onde os jogadores criam e controlam personagens virtuais, chamados de Sims, e gerenciam suas vidas.</p>
+            <p class="price">R$ 385,47</p>
+            <a class="buy-button" href="https://www.amazon.com.br/The-Sims-4-PC-Mac/dp/B00EFRN2IQ">Comprar</a>
+        </div>
+
+        <div class="game-card">
+            <img src="https://m.media-amazon.com/images/I/71w18E60zzL._AC_SY741_.jpg" alt="Jogo 3">
+            <h2>Pokemon Let's Go Pikachu</h2>
+            <p>É um jogo de RPG e aventura lançado para o Nintendo Switch. Ele combina elementos clássicos dos jogos de Pokémon com mecânicas inspiradas em Pokémon GO</p>
+            <p class="price">R$ 313,99</p>
+            <a class="buy-button" href="https://www.amazon.com.br/Pok%C3%A9mon-Lets-Go-Pikachu-Nintendo/dp/B01MT8AIBE">Comprar</a>
+        </div>
+    </div>
+
+    <footer><strong>
+        Todos os direitos reservados - Feito por Maria Eduarda
+    </strong></footer>
+</body>
+</html>
